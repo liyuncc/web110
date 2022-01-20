@@ -1,0 +1,131 @@
+/* My BIG Website's Layout Styles */
+
+/* START GLOBAL RULES */
+
+
+/* group selector: html, body */
+html, body {
+    background-color: lightblue;
+    padding: 0;
+    margin: 0;
+} 
+
+div.wrapper {
+    max-width: 1280px;
+    background-color: #fff;
+    margin: 0 auto;
+    overflow: auto;  /* Delete this to see the effect. To remind the parent element, the div.wrapper, to see any                    floated child elements. */
+}
+
+/* compound selector: header h1  */
+header h1 {
+    text-align:center;
+    margin: 0;
+    padding: 1em;
+}
+
+h2, h3, p {
+    margin: 0.5em;
+}
+p {
+    font-size: 1.2em;
+}
+
+
+section {
+    float:left;
+    width: 64%;
+}
+
+aside {
+    float:right;
+    width: 33%;
+}
+
+.fullwidth {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    border: 1px solid #000;
+}
+
+
+div.gallery {
+    text-align: center;
+}
+
+figure {
+    display: inline-block;
+    margin: 0.25%;
+}
+
+
+
+/* EMBED Responsively styles */
+.embed-container { 
+position: relative; 
+padding-bottom: 56.25%; 
+height: 0; 
+overflow: hidden; 
+max-width: 100%; 
+} 
+
+.embed-container iframe { 
+position: absolute; 
+top: 0; 
+left: 0; 
+width: 100%; 
+height: 100%; 
+}
+
+/* HIDE AGENDA VIEW CALENDAR */
+div.embed-container.agenda-view {
+    display: none;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    padding: 2em;
+}
+
+/* END GLOBAL RULES */
+
+
+
+/* CALENDAR RULES for PHONE */
+@media all and (max-width: 1028px) {
+    /* Show agenda view */
+    div.embed-container.agenda-view {
+        display: block;
+    }
+    /* Hide month view */
+    div.embed-container.month-view {
+        display: none;
+    }
+}
+
+
+/* START PHONE RESPONSIVE RULES */
+
+@media all and (max-width:600px) {
+    div.wrapper {
+        
+    }
+    section {
+    float:none;
+    width: 100%;
+   
+    }   
+
+    aside {
+    float:none;
+    width: 100%;
+    
+    }
+ 
+}
+
+/* END PHONE - RESPONSIVE RULES */
