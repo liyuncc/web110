@@ -1,0 +1,181 @@
+/* My FP Website's Layout Styles */
+
+/* START GLOBAL RULES */
+
+html, body {
+    background-color: #000;
+    padding: 0;
+    margin: 0;  
+} 
+
+header{
+    background-color: #000;
+}
+    
+div.logo {
+    max-width: 100%;
+    float: left;
+}
+
+#cssmenu {
+    width: 100%;
+    margin: 0;
+}
+
+
+header h1 {
+    text-align:center;
+    margin: 0;
+    padding: 2em;
+    font-family: cursive, serif;
+    background-color: #000;
+    color: #fff;
+}
+
+
+div.wrapper {
+    max-width: 1280px;
+    background-color: #000;
+    margin: 0 auto;
+    overflow: auto;  /* Delete this to see the effect. To remind the parent element, the div.wrapper, to see any                    floated child elements. */
+    width: 80%;
+}
+
+h2, h3, p {
+    margin: 1em;
+}
+
+p {
+    font-size: 1.2em;
+    color: #fff;
+    font-family: serif;
+}
+
+h2, h3 {
+    font-family: cursive, serif;
+    color: red;
+    text-align: center;
+}
+
+
+section {
+    float: left;
+    width: 70%;
+    
+}
+
+aside {
+    float: right;
+    width: 28%;
+    
+}
+
+aside.event {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1.5em;
+}
+
+.home-image {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    color: #fff;
+} 
+
+.fullwidth {
+    width: 100%;
+    background-color: lightgrey;
+    padding-left: 2em;
+    padding-bottom: 1em;
+}
+
+div.contact-feedback p {
+    color: #000;
+}
+
+
+div.gallery {
+    text-align: center;
+    color: #fff;
+}
+
+img {
+    width: 100%;
+    border: 1px solid #000;
+}
+
+figure {
+    width: 25%;
+    display: inline-block;
+    margin: 1em;
+}
+
+
+/* EMBED Responsively styles */
+.embed-container { 
+position: relative; 
+padding-bottom: 56.25%; 
+height: 0; 
+overflow: hidden; 
+max-width: 100%; 
+} 
+
+.embed-container iframe { 
+position: absolute; 
+top: 0; 
+left: 0; 
+width: 100%; 
+height: 100%; 
+}
+
+
+footer {
+    clear: both;
+    text-align: center;
+    padding: 2em;
+    color: #fff;
+}
+
+
+/* END GLOBAL RULES */
+
+
+
+/* START- PHONE RESPONSIVE RULES */
+
+@media all and (max-width: 600px) {
+    
+    div.logo {
+    width: 100%; 
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    header h1 {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: cursive;
+    background-color: #000;
+    color: #fff;
+    padding: 0;
+    }
+    
+    section {
+    float: none;
+    width: 100%;
+   
+    }   
+
+    aside {
+    float: none;
+    width: 100%;
+    
+    }
+}
+
+
+
+/* END- PHONE RESPONSIVE RULES */
