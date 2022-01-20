@@ -1,0 +1,114 @@
+/* My Portal Website's Layout Styles */
+
+/* START GLOBAL RULES */
+
+html {
+    background-color:#ccc;
+} 
+
+div.wrapper {
+    background-color:#fff;
+    overflow:auto;
+}
+
+p {
+    margin-left:1em;
+}
+
+h1,h2,h3 {
+    margin-left:.5em;
+}
+
+a {
+    color:blue;
+    text-decoration: none;
+}
+
+a:hover {
+    color:red;
+    text-decoration: underline;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    padding: .75em;
+}
+
+/* END GLOBAL RULES */
+
+
+
+
+/* START DESKTOP - RESPONSIVE RULES */
+
+@media all and (min-width:1400px) {
+    
+    div.wrapper {
+        width: 80%;
+        margin: auto;
+    }
+    
+    img.desktop {
+        width: 50%;
+        float: right;
+        margin-left: 1em; 
+    }
+    
+    p {margin:1em;}
+    
+    img.tablet,img.phone {
+        display: none;
+    }
+    
+    
+}
+
+/* END DESKTOP - RESPONSIVE RULES */
+
+
+/* START TABLET - RESPONSIVE RULES */
+
+@media all and (min-width:501px) and (max-width:1399px) {
+
+    div.wrapper {
+        width: 90%;
+        margin: auto;
+    }
+    
+    img.tablet {
+        width: 50%;
+        float: left;
+        margin-right: 2em;
+    }
+    
+    img.desktop,img.phone {
+        display: none;
+    }
+    
+    
+}
+
+/* END TABLET - RESPONSIVE RULES */
+
+
+
+/* START PHONE - RESPONSIVE RULES */
+
+@media all and (max-width:500px) {
+    
+    div.wrapper {
+        width:100%;
+    }
+    
+    img.phone {
+        width:100%;
+    }
+    
+    img.desktop,img.tablet {
+        display:none;
+    }
+ 
+}
+
+/* END PHONE - RESPONSIVE RULES */
